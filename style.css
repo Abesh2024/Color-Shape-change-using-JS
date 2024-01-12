@@ -18,10 +18,17 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: blanchedalmond;
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#inner {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 5%;
 }
 
 #btn1,
@@ -50,7 +57,7 @@ body {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 100px solid red;
-    background: black;
+    /* background: black; */
 }
 
 #star-five {
