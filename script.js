@@ -2,6 +2,7 @@ let container = document.getElementById("container");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let inner = document.getElementById("inner");
+let extra = document.getElementById("extra-btn");
 
 
 function colorChange() {
@@ -24,3 +25,8 @@ function changeShape() {
 } 
 
 btn2.addEventListener("click", changeShape);
+
+
+extra.addEventListener("click", ()=>{
+    document.body.classList.toggle("bg-color");
+})
