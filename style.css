@@ -11,12 +11,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
+#anim {
+    margin-bottom: 5px;
+}
 #container {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     background-color: red;
     display: flex;
@@ -121,4 +124,77 @@ body {
     height: 0;
     border: 50px solid transparent;
     border-top-color: red;
+}
+
+
+#anim{
+    height: 150px;
+    width: 700px;
+    font-size: 4rem;
+    animation-name: sizechange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    color: darkblue;
+    font-weight: 700;
+}
+
+@keyframes sizechange{
+    /* 0%{
+        font-size: 5rem;
+    }
+
+    25%{
+        font-size: 4rem;
+    } */
+
+    50%{
+        font-size: 1rem;
+    }
+
+    65% {
+        font-size: 1.3rem;
+    }
+
+    75%{
+        font-size: 1.7rem;
+    }
+
+    100% {
+        font-size: 2rem;
+    }
+}
+
+#btn1 {
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 3px solid #F83A70;
+    background-color: #FAD3E1;
+    color: #DD4F70;
+    font-weight: 750;
+    transition: all 0.2s;
+}
+
+#btn1:hover {
+    transform: translateX(7px);
+    background-color: #F83A70;
+    color: white;
+}
+
+#btn2 {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 2px solid #F83A70;
+    background-color: #FAD3E1;
+    color: #DD4F70;
+    font-weight: 700;
+    transition: all 0.2s;
+
+}
+
+#btn2:hover {
+    transform: translateX(-7px);
+    background-color: #F83A70;
+    color: white;
 }
